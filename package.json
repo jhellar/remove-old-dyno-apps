@@ -1,7 +1,7 @@
 {
-  "name": "utils",
+  "name": "remove-old-dyno-apps",
   "version": "1.0.0",
-  "description": "",
+  "description": "Script which will help to remove old applications from dyno farm",
   "author": "jhellar",
   "dependencies": {
     "async": "^2.0.0",
