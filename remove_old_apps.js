@@ -4,6 +4,7 @@ var winston = require('winston');
 var _ = require('underscore');
 var async = require('async');
 
+// FHC config:
 // var host = 'https://testing.zeta.feedhenry.com/';
 // var username = 'testing-admin@example.com';
 // var password = 'Password1';
@@ -11,10 +12,12 @@ var host = 'https://onprem0.zeta.feedhenry.com';
 var username = 'testing-admin@example.com';
 var password = 'Password1';
 
+// Dyno config:
 var dynofarm = 'https://api.mbaas1.zeta.feedhenry.com';
 var dynoUsername = 'df-mbaas1-zeta';
 var dynoPassword = 's0nRrtyp';
 
+// Delete apps older than:
 var daysBack = 30;
 
 var fhConfig = {
