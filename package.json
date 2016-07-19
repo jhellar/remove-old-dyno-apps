@@ -1,0 +1,13 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "",
+  "author": "jhellar",
+  "dependencies": {
+    "async": "^2.0.0",
+    "fh-dfc": "^0.24.4-79",
+    "fh-fhc": "^2.1.5-BUILD-NUMBER",
+    "underscore": "^1.8.3",
+    "winston": "^2.2.0"
+  }
+}
