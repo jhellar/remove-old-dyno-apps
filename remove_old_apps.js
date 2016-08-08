@@ -4,21 +4,19 @@ var winston = require('winston');
 var _ = require('underscore');
 var async = require('async');
 
-// FHC config:
-// var host = 'https://testing.zeta.feedhenry.com/';
-// var username = 'testing-admin@example.com';
-// var password = 'Password1';
-var host = 'https://onprem0.zeta.feedhenry.com';
-var username = 'testing-admin@example.com';
-var password = 'Password1';
+if (process.argv.length < 9) {
+  return console.log('Usage: node remove_old_apps.js host username password dynofarm dynoUsername dynoPassword daysBack');
+}
 
-// Dyno config:
-var dynofarm = 'https://api.mbaas1.zeta.feedhenry.com';
-var dynoUsername = 'df-mbaas1-zeta';
-var dynoPassword = 's0nRrtyp';
+var host = process.argv[2];
+var username = process.argv[3];
+var password = process.argv[4];
 
-// Delete apps older than:
-var daysBack = 30;
+var dynofarm = process.argv[5];
+var dynoUsername = process.argv[6];
+var dynoPassword = process.argv[7];
+
+var daysBack = process.argv[8];
 
 var fhConfig = {
   loglevel: 'error',
